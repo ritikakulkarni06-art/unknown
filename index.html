@@ -23,8 +23,9 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.video-container{
+video{
 margin-top:40px;
+border-radius:10px;
 }
 </style>
 
@@ -44,18 +45,12 @@ margin-top:40px;
 
 </div>
 
-<div class="video-container">
-
 <h2>Watch the Explanation Video</h2>
 
-<iframe 
-width="640" 
-height="360" 
-src="https://drive.google.com/file/d/1wCkpZQW3lsp9WfTiKp9C453Ld10J6syA/view?usp=drive_link" 
-allow="autoplay">
-</iframe>
-
-</div>
+<video width="640" height="360" controls>
+<source src="video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 </body>
 </html>
