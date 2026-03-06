@@ -9,48 +9,94 @@
 body{
 font-family: Arial, sans-serif;
 text-align:center;
-background:#0d1117;
+background: linear-gradient(135deg,#0d1117,#161b22,#0d1117);
 color:white;
 margin:0;
 padding:20px;
 }
 
+/* HEADER CARD */
+
+.header{
+background: rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+width:80%;
+margin:auto;
+box-shadow:0 8px 25px rgba(0,0,0,0.6);
+backdrop-filter: blur(6px);
+}
+
 h1{
-margin-top:10px;
+margin:0;
+font-size:32px;
 }
 
 p{
 color:#c9d1d9;
+margin-top:8px;
 }
+
+/* POSTER GRID */
 
 .container{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:25px;
-margin-top:30px;
+gap:30px;
+margin-top:40px;
 }
 
-img{
-width:280px;
-border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.6);
-transition: transform 0.3s ease;
+/* POSTER CARD */
+
+.poster-card{
+background:#161b22;
+padding:12px;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.7);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img:hover{
-transform:scale(1.08);
+.poster-card:hover{
+transform: translateY(-8px);
+box-shadow:0 10px 35px rgba(0,150,255,0.4);
 }
+
+/* POSTER IMAGE */
+
+.poster-card img{
+width:260px;
+border-radius:10px;
+}
+
+/* VIDEO SECTION */
 
 .video-section{
-margin-top:60px;
+margin-top:70px;
+padding:30px;
+background:#161b22;
+border-radius:15px;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 6px 25px rgba(0,0,0,0.6);
+}
+
+.video-section h2{
+margin-bottom:20px;
 }
 
 video{
-width:80%;
+width:100%;
 max-width:700px;
 border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.6);
+box-shadow:0 6px 20px rgba(0,0,0,0.7);
+}
+
+footer{
+margin-top:50px;
+color:#8b949e;
+font-size:14px;
 }
 
 </style>
@@ -59,28 +105,48 @@ box-shadow:0 6px 15px rgba(0,0,0,0.6);
 
 <body>
 
+<div class="header">
+
 <h1>Math Club Posters</h1>
 <p>Explore the mathematics behind real world ideas</p>
 
+</div>
+
+
 <div class="container">
 
+<div class="poster-card">
 <img src="poster1.jpg">
+</div>
+
+<div class="poster-card">
 <img src="poster2.jpg">
+</div>
+
+<div class="poster-card">
 <img src="poster3.jpg">
+</div>
+
+<div class="poster-card">
 <img src="poster4.jpg">
+</div>
 
 </div>
+
 
 <div class="video-section">
 
 <h2>Watch the Explanation Video</h2>
 
 <video controls>
-<source src="video.mp4" type="video/mp4">
+<source src="video.mp4.mp4" type="video/mp4">
 </video>
 
 </div>
 
-</body>
+<footer>
+Math Club Exhibition
+</footer>
 
+</body>
 </html>
